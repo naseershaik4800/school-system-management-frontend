@@ -1,0 +1,114 @@
+/* Wrapper styling with gradient background */
+.add-principal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(106, 7, 131, 0.973) 0%, rgba(106, 7, 131, 0.966) 100%);
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 40% 90%;
+    top: 0;
+    right: 0;
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+  }
+  
+  /* Pseudo-element for curved effect */
+  .add-principal-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    z-index: 0;
+  }
+  
+  /* Container for the form */
+  .add-principal-container {
+    /* background: white; */
+    padding: 2rem;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  /* Title styling */
+  .add-principal-title {
+    font-size: 2rem;
+    font-weight: midium;
+    text-align: center;
+    color: rgb(252,201,0);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+    margin-top: -15px;
+  }
+  
+  /* Grid for two-column input fields */
+  .add-principal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Label styling */
+  .add-principal-label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+  
+  /* Input fields styling */
+  .add-principal-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .add-principal-input:focus {
+    border-color: #6a0783;
+    box-shadow: 0px 0px 5px rgba(106, 7, 131, 0.5);
+    outline: none;
+  }
+  
+  /* Button styling */
+  .add-principal-button {
+    /* width: 40%; */
+    background: rgb(202, 162, 3);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.301);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+    box-shadow: 0px 0px 5px rgba(210, 201, 212, 0.692);
+  }
+  
+  .add-principal-button:hover {
+    background: #5c0674;
+    box-shadow: 0px 0px 5px rgba(210, 201, 212, 0.692);
+  }
+  
+  /* Error message styling */
+  .add-principal-error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  

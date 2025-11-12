@@ -1,0 +1,67 @@
+.cardstyle{
+    background: linear-gradient(180deg, rgb(255, 255, 255), rgb(218, 133, 233));
+    border: 2px solid rgb(162,93,174);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    max-height: fit-content;
+}
+.rounded-circle{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(162,93,174);
+}
+/* Media query for screens 320px and smaller */
+@media (max-width: 320px) {
+    .cardstyle {
+        width: 100%; /* Slightly smaller width to fit comfortably */
+        margin: 5px auto; /* Reduced margin, still centered */
+        padding: 8px; /* Slightly reduced padding */
+    }
+
+    .rounded-circle {
+        width: 80px; /* Scaled down proportionally */
+        height: 80px; /* Maintains circle shape */
+    }
+    .IdCard{
+        max-height: fit-content;
+    }
+}
+
+/* Media query for screens between 321px and 480px (larger phones) */
+@media (min-width: 321px) and (max-width: 480px) {
+    .cardstyle {
+        width: 90%; /* Slightly less than full width for breathing room */
+        margin: 8px auto; /* Slightly larger margin */
+        padding: 10px; /* Default padding */
+    }
+
+    .rounded-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    .IdCard {
+        max-height: fit-content;
+    }
+}
+
+/* Media query for screens between 481px and 768px (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .cardstyle {
+        width: 80%; /* Reduced width for better tablet layout */
+        margin: 10px auto; /* Default margin */
+        padding: 10px;
+
+    }
+
+    .rounded-circle {
+        width: 100px; /* Back to original size */
+        height: 100px;
+    }
+
+    .IdCard {
+        max-height: fit-content;
+    }
+}

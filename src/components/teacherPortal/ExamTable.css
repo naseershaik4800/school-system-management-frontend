@@ -1,0 +1,238 @@
+.Ke-dic {
+  background-color: rgb(221, 237, 255);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.ke-sh {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Ke-bo {
+  color: rgb(107, 7, 131);
+}
+
+
+.Ke-mod {
+
+
+
+  background-color: rgb(107, 7, 131);
+  border: none;
+  padding: 4px 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Ke-bt {
+  background-color: transparent;
+  color: rgb(107, 7, 131);
+  border: 1px solid rgb(107, 7, 131);
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+}
+
+.Ke-bt.selected {
+  background-color: rgb(107, 7, 131);
+  color: #fff;
+}
+
+.Ke-bt1 {
+  background-color: rgb(255, 193, 7);
+  border: none;
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 6px 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Ke-inps {
+  width: 60px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px;
+  font-weight: 500;
+}
+
+.Ke-bt2 {
+  background-color: rgb(107, 7, 131);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #fff;
+  padding: 6px 12px;
+  transition: all 0.3s ease;
+}
+
+.Ke-over {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.Ke-cust {
+  background-color: rgb(221, 237, 255);
+  border-radius: 16px;
+  padding: 24px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgb(107, 7, 131);
+ 
+}
+
+.Ke-he {
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.Ke-tit {
+  color: rgb(107, 7, 131);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.Ke-inps {
+  border-radius: 8px;
+  border: 1px solid rgb(107, 7, 131);
+  padding: 8px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Ke-sec {
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: rgb(255, 255, 255);
+  color: rgb(107, 7, 131);
+  border: 1px solid rgb(107, 7, 131);
+  font-weight: 500;
+}
+
+.Ke-sec.selected {
+  background-color: rgb(107, 7, 131);
+  color: #fff;
+}
+
+.Ke-int {
+  border-radius: 8px;
+  border: 1px solid rgb(107, 7, 131);
+  padding: 8px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Ke-foo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+}
+
+.Ke-bt1 {
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 6px 12px;
+  background-color: #fff;
+  color: rgb(107, 7, 131);
+  border: 1px solid rgb(107, 7, 131);
+}
+
+.Ke-bt2 {
+  background-color: rgb(255, 193, 7);
+  border: none;
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+
+
+
+
+
+
+/* 🔹 Responsive Design Adjustments */
+@media (max-width: 425px) {
+  .Ke-cust {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .Ke-tit {
+    font-size: 18px;
+  }
+
+  .Ke-bt,
+  .Ke-bt1,
+  .Ke-bt2 {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Ke-mod {
+    font-size: 12px; /* Smaller font size */
+    padding: 6px 12px; /* Adjust padding */
+    width: 100%; /* Makes button full-width */
+    display: block; /* Ensures it's on a new line */
+    text-align: center; /* Centers text */
+  }
+
+  .text-end {
+    text-align: center !important; /* Aligns button center */
+  }
+}
+
+/* 🔹 Mobile-Friendly Table (320px - 425px) */
+@media (max-width: 425px) {
+  .Kt-table-container {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .Kt-tab {
+    display: block;
+    width: 100%;
+  }
+
+  .Kt-th,
+  .Kt-td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .Kt-th {
+    white-space: normal;  /* Allows text to wrap instead of overflowing */
+  }
+
+  .Kt-td.branch-id {
+    word-break: break-word;
+    max-width: 100px;
+  }
+}

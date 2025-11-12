@@ -1,0 +1,134 @@
+
+
+  
+ /* Container Styling
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+
+} */
+
+/* Card Styling */
+.card {
+  width: 100%;
+  /* max-width: 900px; */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Title Styling */
+h2 {
+  color: #007bff;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button Container */
+.d-flex.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Exam Buttons */
+.btn1 {
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary Button (Unselected) */
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Success Button (Selected) */
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+/* Click Effect */
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Table Styling */
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #007bff;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* Alternate Row Colors */
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+tr:hover {
+  background: #d6e9ff;
+  transition: background 0.3s ease;
+}
+
+/* Animation for Smooth UI */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  
+  input[type="number"] { width: 80px !important; font-size: 18px; padding: 5px; text-align: center; font-weight: bold; }
+
+  
+ 

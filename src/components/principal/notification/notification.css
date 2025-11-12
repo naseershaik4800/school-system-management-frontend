@@ -1,0 +1,217 @@
+/* General Styles */
+.v-notification-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+}
+
+h2 {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Card Styles */
+.v-notification-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.v-notification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.v-notification-card .card-header {
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 12px 12px 0 0;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.v-notification-card .card-body {
+  padding: 20px;
+}
+
+
+
+/* Checkbox Styles */
+.v-role-checkboxes .form-check {
+  margin-bottom: 10px;
+}
+
+
+/* Floating Action Button (FAB) */
+.v-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.v-fab:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Tabs Styles */
+.v-custom-tabs {
+  border-bottom: 2px solid #dee2e6;
+  margin-bottom: 20px;
+}
+
+.v-custom-tabs .nav-link {
+  border: none;
+  border-radius: 8px 8px 0 0;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.v-custom-tabs .nav-link.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.v-custom-tabs .nav-link:hover {
+  background-color: #ecf0f1;
+}
+
+/* List Group Styles */
+.list-group {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #ecf0f1;
+}
+
+/* Skeleton Loading */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Toast styling for error and success messages */
+.v-toast-error,
+.v-toast-success {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  z-index: 1050;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.v-toast-error {
+  background-color: #dc3545;
+}
+
+.v-toast-success {
+  background-color: #28a745;
+}
+
+.v-toast-error span,
+.v-toast-success span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.v-toast-error button,
+.v-toast-success button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.v-toast-error button:hover,
+.v-toast-success button:hover {
+  opacity: 0.8;
+}
+
+/* Spinner centering */
+.v-text-center .spinner-border {
+  color: #3498db;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .v-notification-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .v-fab {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .v-toast-error,
+  .v-toast-success {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    top: 10px;
+  }
+
+  .v-role-checkboxes .form-check {
+    margin-bottom: 10px;
+  }
+}

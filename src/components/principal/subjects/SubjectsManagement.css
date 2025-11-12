@@ -1,0 +1,85 @@
+/* Main container */
+.subjects-container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Class selection */
+  .class-selection {
+    margin-bottom: 20px;
+  }
+  
+  .class-selection select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Subjects section */
+  .subjects-section {
+    text-align: center;
+  }
+  
+  /* Input and button for adding subject */
+  .subject-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .subject-input input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-subject-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .add-subject-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Subjects table */
+  .subjects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .subjects-table th, .subjects-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .subjects-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Delete button */
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  

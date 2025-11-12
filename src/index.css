@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --background-color: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+}
+
+.sidebar {
+  min-height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.stats-card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--success-color));
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+  }
+
+  .main-content {
+    margin-top: 60px;
+  }
+}
+
+
+/* Google */
+/* Hide the Google Translate top banner */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+/* Hide the Google Translate pop-up */
+body > .skiptranslate {
+  display: none !important;
+}
+
+/* Prevent layout shift */
+html, body {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  overflow-y: auto !important;
+  position: relative !important;
+  top: 0px !important;
+}
+
+/* Hide Google Translate toolbar */
+.goog-te-gadget {
+  font-size: 0 !important;
+}
+
+/* Hide Google Translate loading icon */
+.goog-te-spinner-pos, .goog-te-spinner {
+  display: none !important;
+}
+
+/* Hide 'Powered by Google Translate' text */
+.goog-logo-link, .goog-te-gadget span {
+  display: none !important;
+}
+
+/* Hide the dropdown arrow in the Google Translate widget */
+.goog-te-gadget-icon {
+  display: none !important;
+}

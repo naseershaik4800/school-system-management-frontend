@@ -1,0 +1,56 @@
+.card-header {
+    padding: 10px;
+  }
+  
+  /* Default styles */
+  .discipline-label {
+    font-size: 15px;
+  }
+  
+  .discipline-button {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
+  /* Media query for screens 320px and below */
+  @media (max-width: 320px) {
+    .card-header {
+      flex-direction: column;
+      gap: 8px;
+      padding: 6px;
+    }
+  
+    .discipline-label {
+      width: 100%;
+      padding: 6px;
+      font-size: 12px;
+    }
+  
+    .discipline-button {
+      width: 90%;
+      padding: 7px;
+      font-size: 8px;
+    }
+  }
+  
+  /* Media query for ultra-small screens (30px and below) */
+  @media (max-width: 30px) {
+    .card-header {
+      padding: 2px;
+      gap: 4px;
+    }
+  
+    .discipline-label {
+      font-size: 6px;
+      padding: 2px;
+      line-height: 1;
+    }
+  
+    .discipline-button {
+      width: 100%;
+      padding: 2px;
+      font-size: 4px;
+      line-height: 1;
+    }
+  }

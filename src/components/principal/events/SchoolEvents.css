@@ -1,0 +1,178 @@
+  /* General Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+  }
+
+  .events-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .title {
+    text-align: center;
+    color: #1a5276;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  /* Form Styles */
+  .event-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .event-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .event-form h3 {
+    margin-bottom: 20px;
+    color: #154360;
+    font-size: 1.8rem;
+  }
+
+  input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    /* margin-bottom: 20px; */
+    border: 1px solid #85c1e9;
+    border-radius: 12px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+
+  input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #1a5276;
+  }
+
+  button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  /* Button Spacing */
+  .button-group {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Events and Announcements Grid */
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+  }
+
+  .event-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .event-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, #1a5276, #85c1e9);
+    z-index: -1;
+  }
+
+  .event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .event-title {
+    font-size: 1.8rem;
+    color: #1a5276;
+    margin-bottom: 15px;
+  }
+
+  .event-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+  }
+
+  p {
+    margin: 15px 0;
+    color: #555;
+  }
+
+  /* Event Status Badge */
+  .event-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #85c1e9;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .events-container {
+      padding: 15px;
+    }
+
+    .event-form, .event-card {
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    input[type="text"], input[type="date"], button {
+      font-size: 14px;
+    }
+
+    .event-title {
+      font-size: 1.5rem;
+    }
+
+    .event-badge {
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+    }
+  }

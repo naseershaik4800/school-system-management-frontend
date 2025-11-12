@@ -1,0 +1,113 @@
+/* Timetable.css */
+.timetable-container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .timetable-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://k8school.com/wp-content/uploads/2024/02/The-Ultimate-Guide-to-Creating-a-Time-Table-Schedule-for-Study.jpg")
+      no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 0;
+  }
+  
+  .timetable-container > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .timetable-cards {
+    max-width: 1200px;
+  }
+  
+  .timetable-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .timetable-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 123, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+    z-index: 0;
+  }
+  
+  .timetable-card:hover::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .timetable-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .timetable-card .card-body {
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .timetable-card .card-title {
+    color: #007bff;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .timetable-card:hover .card-title {
+    color: #0056b3;
+  }
+  
+  .timetable-card .card-text {
+    color: #6c757d;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .timetable-container {
+      padding: 15px;
+    }
+  
+    .timetable-card {
+      margin-bottom: 1rem;
+    }
+  
+    .display-4 {
+      font-size: 2rem;
+    }
+  
+    .timetable-card .card-body {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .timetable-card .card-title {
+      font-size: 1.25rem;
+    }
+  
+    .timetable-card .card-text {
+      font-size: 0.9rem;
+    }
+  }

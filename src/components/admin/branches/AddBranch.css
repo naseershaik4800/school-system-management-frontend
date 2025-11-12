@@ -1,0 +1,294 @@
+/* Wrapper for centering the component */
+.add-branch-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(106, 7, 131, 0.973) 0%, rgba(106, 7, 131, 0.966) 100%);
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-top-right-radius: 50% 90%;
+  top: 0;
+  right: 0;
+  width: 100%;
+  font-family: "Gill Sans", sans-serif;
+}
+
+/* Pseudo-element for curved effect */
+.add-branch-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  z-index: 0;
+}
+
+/* Container for the form */
+.add-branch-container {
+  width: 100%;
+  max-width: 900px; /* Adjusted width for form-only layout */
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Title styling */
+.add-branch-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(252, 201, 0);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Gill Sans", sans-serif;
+}
+
+/* Error message */
+.add-branch-error {
+  color: #ef4444;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Form Content */
+.add-branch-form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Two-column form row */
+.add-branch-form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Form group */
+.add-branch-form-group {
+  flex: 1;
+}
+
+/* Label styling */
+.add-branch-label {
+  display: block;
+  font-size: 0.99rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 0.80rem;
+}
+
+/* Input styling */
+.add-branch-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.add-branch-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px #93c5fd;
+}
+
+/* Status Buttons */
+.add-branch-status-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.add-branch-status-btn {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.add-branch-status-btn:nth-child(1).active {
+  background-color: #31ad65; /* Green for Active */
+  color: #fff;
+  border-color: #89fab8;
+}
+
+.add-branch-status-btn:nth-child(2).active {
+  background-color: #e74c3c; /* Red for Inactive */
+  color: #fff;
+  border-color: #ff9c91;
+}
+
+.add-branch-status-btn:hover:not(.active) {
+  background-color: #e5e7eb;
+}
+
+/* Submit Button */
+.add-branch-submit-btn {
+  width: 30%;
+  padding: 0.75rem;
+  background-color: rgb(255, 205, 5);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.699);
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.534);
+  border: none;
+}
+
+.add-branch-submit-btn:hover {
+  background-color: rgb(107, 7, 131);
+  box-shadow: 0 2px 2px rgba(255, 255, 255, 0.527);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .add-branch-container {
+    max-width: 700px;
+    padding: 1.75rem;
+  }
+
+  .add-branch-title {
+    font-size: 1.75rem;
+  }
+
+  .add-branch-submit-btn {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-branch-wrapper {
+    padding: 0.75rem;
+    border-top-right-radius: 30% 60%; /* Adjust curve for smaller screens */
+  }
+
+  .add-branch-container {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .add-branch-title {
+    font-size: 1.5rem;
+  }
+
+  .add-branch-form-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .add-branch-label {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .add-branch-input {
+    padding: 0.45rem;
+  }
+
+  .add-branch-status-btn {
+    padding: 0.45rem;
+  }
+
+  .add-branch-submit-btn {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-branch-wrapper {
+    padding: 0.5rem;
+    border-top-right-radius: 20% 40%; /* Further adjust curve */
+  }
+
+  .add-branch-container {
+    padding: 1rem;
+  }
+
+  .add-branch-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .add-branch-label {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .add-branch-input {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .add-branch-status-buttons {
+    gap: 0.3rem;
+  }
+
+  .add-branch-status-btn {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .add-branch-submit-btn {
+    width: 100%; /* Full width on small screens */
+    padding: 0.65rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .add-branch-title {
+    font-size: 1.1rem;
+  }
+
+  .add-branch-label {
+    font-size: 0.8rem;
+  }
+
+  .add-branch-input {
+    padding: 0.35rem;
+    font-size: 0.85rem;
+  }
+
+  .add-branch-status-btn {
+    padding: 0.35rem;
+    font-size: 0.85rem;
+  }
+
+  .add-branch-submit-btn {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+.add-branch-error-text {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.add-branch-form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.add-branch-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.add-branch-input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}

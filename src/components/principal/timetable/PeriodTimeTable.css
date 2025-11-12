@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.timetable-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.subject-cell {
+  position: relative;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.action-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.subject-cell:hover .action-buttons {
+  display: flex;
+}
+
+.btn {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+select {
+  padding: 8px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+.timetable-table td {
+  vertical-align: middle; /* Align content vertically */
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px; /* Add spacing between buttons */
+  justify-content: center; /* Center buttons horizontally */
+}

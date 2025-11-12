@@ -1,0 +1,414 @@
+/* General Container Styling */
+.buslist-driver-profile-container {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Headings */
+  .buslist-h2 {
+    color: #333;
+    font-size: clamp(20px, 5vw, 24px);
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .buslist-h3 {
+    color: #444;
+    font-size: clamp(18px, 4vw, 20px);
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  /* Header Controls */
+  .buslist-header-controls {
+    flex-wrap: wrap;
+    gap: 10px !important;
+    justify-content: space-between;
+  }
+  
+  .buslist-control-group {
+    gap: 10px !important;
+  }
+  
+  .buslist-search-input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .buslist-search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  .buslist-sort-select {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .buslist-sort-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  .buslist-btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .buslist-btn-success:hover {
+    background-color: #218838;
+  }
+  
+  /* Form Styling */
+  .buslist-form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .buslist-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .buslist-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .buslist-form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .buslist-form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  .buslist-routing-group {
+    gap: 10px !important;
+  }
+  
+  .buslist-preview-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    object-fit: cover;
+  }
+  
+  .buslist-button-group {
+    gap: 10px !important;
+  }
+  
+  .buslist-btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .buslist-btn-primary:hover {
+    background-color: #0069d9;
+  }
+  
+  .buslist-btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .buslist-btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Highlight Animation for Form */
+  .buslist-highlight-form {
+    animation: buslist-highlight 1.5s ease-out;
+  }
+  
+  @keyframes buslist-highlight {
+    0% { background-color: #e6f3ff; }
+    100% { background-color: #fff; }
+  }
+  
+  /* Table Styling */
+  .buslist-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .buslist-table thead th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 500;
+    font-size: clamp(12px, 3vw, 14px);
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .buslist-table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  .buslist-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .buslist-table td {
+    padding: 10px;
+    font-size: clamp(12px, 3vw, 14px);
+    color: #333;
+    vertical-align: middle;
+  }
+  
+  .buslist-table-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .buslist-btn-edit {
+    padding: 6px 12px;
+    font-size: clamp(10px, 2.5vw, 12px);
+    border-radius: 4px;
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .buslist-btn-edit:hover {
+    background-color: #0069d9;
+  }
+  
+  .buslist-btn-delete {
+    padding: 6px 12px;
+    font-size: clamp(10px, 2.5vw, 12px);
+    border-radius: 4px;
+    background-color: #dc3545;
+    border: none;
+  }
+  
+  .buslist-btn-delete:hover {
+    background-color: #c82333;
+  }
+  
+  /* Pagination Styling */
+  .buslist-pagination {
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .buslist-page-item .buslist-page-link {
+    color: #007bff;
+    border: 1px solid #ddd;
+    padding: 8px 14px;
+    font-size: clamp(12px, 3vw, 14px);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .buslist-page-item.active .buslist-page-link {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .buslist-page-item.disabled .buslist-page-link {
+    color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .buslist-page-item .buslist-page-link:hover:not(.active):not(.disabled) {
+    background-color: #e9ecef;
+  }
+  
+  /* Responsive Design */
+  
+  /* Small Screens (up to 576px, e.g., mobile phones) */
+  @media (max-width: 576px) {
+    .buslist-driver-profile-container {
+      padding: 10px;
+    }
+  
+    .buslist-header-controls {
+      flex-direction: column;
+      align-items: stretch !important;
+    }
+  
+    .buslist-search-input,
+    .buslist-sort-select,
+    .buslist-btn-success {
+      max-width: none;
+      margin-bottom: 10px;
+    }
+  
+    .buslist-form {
+      padding: 10px;
+    }
+  
+    .buslist-routing-group {
+      flex-direction: column;
+    }
+  
+    .buslist-button-group {
+      flex-direction: column;
+    }
+  
+    .buslist-btn-primary,
+    .buslist-btn-secondary {
+      padding: 8px;
+    }
+  
+    .buslist-table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .buslist-table th,
+    .buslist-table td {
+      padding: 8px;
+    }
+  
+    .buslist-btn-edit,
+    .buslist-btn-delete {
+      padding: 4px 8px;
+    }
+  }
+  
+  /* Medium Screens (576px - 768px, e.g., larger phones, small tablets) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .buslist-header-controls {
+      flex-direction: column;
+      align-items: stretch !important;
+    }
+  
+    .buslist-search-input,
+    .buslist-sort-select,
+    .buslist-btn-success {
+      max-width: none;
+      margin-bottom: 10px;
+    }
+  
+    .buslist-routing-group {
+      flex-direction: column;
+    }
+  
+    .buslist-table {
+      font-size: 13px;
+    }
+  
+    .buslist-table th,
+    .buslist-table td {
+      padding: 10px;
+    }
+  }
+  
+  /* Large Screens (768px - 1024px, e.g., tablets, small laptops) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .buslist-header-controls {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .buslist-search-input {
+      max-width: 200px;
+    }
+  
+    .buslist-sort-select {
+      max-width: 130px;
+    }
+  
+    .buslist-btn-success {
+      max-width: 130px;
+    }
+  
+    .buslist-routing-group {
+      flex-direction: row;
+    }
+  
+    .buslist-table {
+      font-size: 14px;
+    }
+  }
+  
+  /* Extra Large Screens (1024px and up, e.g., laptops, desktops) */
+  @media (min-width: 1025px) {
+    .buslist-driver-profile-container {
+      padding: 20px;
+    }
+  
+    .buslist-header-controls {
+      flex-direction: row;
+    }
+  
+    .buslist-search-input {
+      max-width: 250px;
+    }
+  
+    .buslist-sort-select {
+      max-width: 150px;
+    }
+  
+    .buslist-btn-success {
+      max-width: 150px;
+    }
+  
+    .buslist-form {
+      padding: 20px;
+    }
+  
+    .buslist-routing-group {
+      flex-direction: row;
+    }
+  }

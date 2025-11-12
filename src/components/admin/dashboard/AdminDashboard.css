@@ -1,0 +1,218 @@
+/* AdminStyles.css */
+
+/* Container */
+.admin-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+}
+
+/* Title */
+.admin-title {
+    font-size: 40px;
+    font-weight: medium;
+    color: rgb(107,7,131);
+    margin-bottom: 30px;
+    font-family: "Gill Sans", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
+}
+
+/* Flexbox Layout to Keep Cards in One Row */
+.admin-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+/* Individual Cards */
+.admin-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.432);
+    /* text-align: center; */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Style the icon */
+.admin-icon {
+    font-size: 30px; /* Increase size (adjust as needed) */
+    margin-bottom: 10px; /* Space between icon and text */
+    color: rgba(106, 7, 131, 0.651);
+  }
+
+
+/* .admin-card:hover {
+    transform: translateY(-5px);
+} */
+
+/* Individual Cards */
+.admin-card1 {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.637);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 40px;
+}
+
+.admin-card1:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Images
+.admin-card img {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+} */
+
+/* Card Titles */
+.admin-card h3 {
+    font-size: 20px;
+    font-weight: midium;
+    margin-bottom: 5px;
+}
+
+/* Card Stats/Description */
+.admin-card p {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(218, 174, 0);
+}
+
+/* Card Colors */
+.admin-card-blue1 {
+   
+    background-color: #ddedff;
+    border: 2.5px solid #3182ce;
+    color: rgb(107,7,131);
+}
+
+.admin-card-blue1:hover {
+    background-color: #ffffff;
+}
+
+.admin-card-green1 {
+    background-color: #d8ffe2;
+    border: 2.5px solid #38a169;
+    color: rgb(107,7,131);
+}
+
+.admin-card-green1:hover {
+  
+    background-color: #ffffff;
+}
+
+.admin-card-purple1 {
+   
+    background-color: #efdfff;
+    border: 2.5px solid #805ad5;
+    color: rgb(107,7,131);
+}
+
+.admin-card-purple1:hover {
+    background-color: #ffffff;
+}
+
+/* Original Card Colors (kept for reference but not used) */
+.admin-card-yellow {
+    background-color: #ffffff;
+    border: 2px solid rgb(107,7,131);
+    color: rgb(107,7,131);
+}
+
+.admin-card-pink {
+    background-color: #ffffff;
+    border: 2px solid rgb(107,7,131);
+    color: rgb(107,7,131);
+}
+
+.admin-card-blue{
+    background-color: #ffffff;
+    border: 2px solid rgb(107,7,131);
+    color: rgb(107,7,131);
+}
+
+.admin-card-green{
+    background-color: #ffffff;
+    border: 2px solid rgb(107,7,131);
+    color: rgb(107,7,131);
+}
+
+.admin-card-purple{
+    background-color: #ffffff;
+    border: 2px solid rgb(107,7,131);
+    color: rgb(107,7,131);
+}
+
+
+
+
+
+
+/* Original Button Styles (commented out as they're not used) */
+
+.admin-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.admin-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.admin-btn-blue {
+    background-color: rgb(107,7,131);
+    border: 2px solid rgb(107,7,131);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.432);
+}
+
+.admin-btn-blue:hover {
+    background-color: #ffffff;
+    border: 2px solid rgb(252,201,0);
+    color:rgb(218, 174, 0) ;
+}
+
+.admin-btn-green {
+   
+    background-color: rgb(252,201,0);
+    border: 2px solid rgb(252,201,0);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.432);
+}
+
+.admin-btn-green:hover {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(107,7,131);
+color:rgb(107,7,131) ;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-grid {
+        flex-wrap: wrap;
+    }
+
+    .admin-card {
+        min-width: 150px;
+    }
+}

@@ -1,0 +1,264 @@
+/* Navbar styles */
+.navbar-custom {
+  background-color: #0d6efd;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .navbar-brand img {
+  height: 44px;
+  width: 115px;
+  object-fit: contain;
+}
+
+.navbar-custom .sidebar-toggle {
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.navbar-custom .sidebar-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.navbar-custom .user-name {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-right: 1rem;
+}
+
+.navbar-custom .btn-logout {
+  color: #ffc107;
+  border: 2px solid #ffc107;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+}
+
+.navbar-custom .btn-logout:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.navbar-custom .navbar-dropdown-toggle {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem;
+}
+
+.navbar-custom .navbar-dropdown-toggle:hover,
+.navbar-custom .navbar-dropdown-toggle:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.navbar-custom .dropdown-menu {
+  margin-top: 0.5rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+.navbar-custom .dropdown-item {
+  padding: 0.5rem 1rem;
+  color: #495057;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.navbar-custom .dropdown-divider {
+  margin: 0.5rem 0;
+}
+
+/* Google Translate Element customization */
+.goog-te-gadget {
+  font-family: inherit !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 2rem !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: rgba(255, 255, 255, 0.9) !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+  border: none !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.875rem !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value:hover {
+  text-decoration: none !important;
+  opacity: 0.8;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+/* Fix for Google Translate dropdown */
+.goog-te-menu2 {
+  max-width: 100% !important;
+  overflow-x: auto !important;
+}
+
+.goog-te-menu2-item div,
+.goog-te-menu2-item:link div,
+.goog-te-menu2-item:visited div,
+.goog-te-menu2-item:active div {
+  color: #333 !important;
+  font-family: inherit !important;
+}
+
+
+
+.language-selector {
+  position: relative;
+}
+
+.language-selector button {
+  background: none;
+  border: none;
+  color: #fff; /* White color to match the screenshot */
+}
+
+.language-selector button:hover {
+  color: #ddd; /* Slightly lighter on hover */
+}
+
+.translate-dropdown {
+  position: absolute;
+  top: calc(100% + 5px); /* Small gap below the icon */
+  left: 0; /* Align to the left */
+  z-index: 1000;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Fixed width for consistency */
+  max-width: 90vw; /* Prevent overflow on small screens */
+  padding: 5px 0;
+}
+
+/* Control visibility with CSS */
+.translate-dropdown.visible {
+  display: block;
+}
+
+.translate-dropdown.hidden {
+  display: none;
+}
+
+.language-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.language-item {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.language-item:hover {
+  background: #f0f0f0;
+}
+
+.language-item.active {
+  background: #e0e0e0;
+  font-weight: 500;
+}
+
+/* Extra small screens (below 576px) */
+@media (max-width: 575.98px) {
+  .translate-dropdown {
+    left: -150px; /* Adjust to align with the navbar edge */
+    width: 180px; /* Slightly smaller for mobile */
+    max-width: calc(100vw - 60px); /* Prevent overflow */
+  }
+
+  .navbar-custom .container-fluid {
+    padding: 0 10px;
+  }
+
+  .language-selector {
+    margin-right: 10px;
+  }
+}
+
+/* Small screens (576px and up) */
+@media (min-width: 576px) {
+  .translate-dropdown {
+    left: 0;
+    width: 200px;
+  }
+}
+
+/* Medium screens (768px and up) */
+@media (min-width: 768px) {
+  .translate-dropdown {
+    left: 0;
+    width: 200px;
+  }
+}
+
+
+/* Default - Medium and larger screens (Full Width) */
+.goog-te-combo {
+  width: 100%;
+  max-width: 250px; /* Adjust as needed */
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Small screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .goog-te-combo {
+    width: 135px;
+    font-size: 13px;
+  }
+}
+
+/* Extra small screens (e.g., mobile phones) */
+@media (max-width: 576px) {
+  .goog-te-combo {
+    width: 60px;
+    font-size: 12px;
+    padding: 3px;
+  }
+}

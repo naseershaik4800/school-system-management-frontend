@@ -1,0 +1,170 @@
+@import 'animate.css';
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+
+.fees-container1 {
+  background-color: rgb(107, 7, 131);
+  min-height: 90vh;
+  padding: 2rem;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column; /* Added */
+  align-items: center; /* Added */
+  justify-content: center; /* Added */
+  display: flex; /* Added */
+}
+
+/* Curved background shape */
+.fees-container1::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+  background: rgba(252, 201, 0, 0.2);
+  border-radius: 50%;
+  z-index: 0;
+  transform: rotate(45deg);
+}
+
+.title1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  animation: bounceInDown 1s ease-in;
+  color: #ffffff;
+  position: relative; /* Added to ensure title stays above decoration */
+  z-index: 1; /* Added to ensure title stays above decoration */
+}
+
+.card-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  animation: fadeInUp 1s ease-in;
+  position: relative; /* Added to ensure cards stay above decoration */
+  z-index: 1; /* Added to ensure cards stay above decoration */
+}
+
+.card-wrapper1 {
+  flex: 1 1 100%;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.card1 {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+}
+
+.card-body1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    height: 100%;
+    text-align: center; /* Added to center card content */
+  }
+
+.card-title1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(107, 7, 131);
+  margin-bottom: 1rem;
+}
+
+.card-text1 {
+  color: rgba(107, 7, 131, 0.8);
+  font-size: 1rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  .card-wrapper1 {
+    flex: 1 1 45%;
+  }
+  
+  .title1 {
+    font-size: 3rem;
+  }
+  
+  .fees-container1 {
+    padding: 3rem;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+  }
+  
+  .fees-container1::before {
+    width: 450px;
+    height: 450px;
+    top: -150px;
+    right: -150px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-wrapper1 {
+    flex: 1 1 30%;
+  }
+  
+  .title1 {
+    font-size: 3.5rem;
+  }
+  
+  .fees-container1 {
+    padding: 4rem;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+  
+  .fees-container1::before {
+    width: 550px;
+    height: 550px;
+    top: -200px;
+    right: -200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .fees-container1 {
+    padding: 1rem;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  .fees-container1::before {
+    width: 250px;
+    height: 250px;
+    top: -75px;
+    right: -75px;
+  }
+  
+  .title1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-body1 {
+    padding: 1.5rem;
+  }
+  
+  .card-title1 {
+    font-size: 1.2rem;
+  }
+  
+  .card-text1 {
+    font-size: 0.9rem;
+  }
+}

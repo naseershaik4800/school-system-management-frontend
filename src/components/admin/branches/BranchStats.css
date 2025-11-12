@@ -1,0 +1,140 @@
+/* BranchStats.css */
+.branch-stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: "Gill Sans", sans-serif;
+  }
+  
+  .stats-title {
+    font-size: 2.2rem;
+    font-weight: medium;
+    color: rgba(106, 7, 131, 0.877);
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.329);
+    font-family: "Gill Sans", sans-serif;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .branch-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(106, 7, 131, 0.685);
+    padding: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .branch-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .branch-header {
+    font-size: 1.34rem;
+    font-weight: 600;
+    color: #ffffff; /* White text for contrast */
+    background-color: rgb(162,93,174); /* Blue background for header */
+    padding: 0.5rem 1rem; /* Padding for header */
+    border-radius: 4px 4px 0 0; /* Rounded top corners */
+    margin: -1.5rem -1.5rem 1rem -1.5rem; /* Extend header outside card padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #ffffff;
+    
+  }
+  
+ 
+  /* Green color for Active */
+.status-badge.active {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Red color for Inactive */
+.status-badge.inactive {
+  background-color: #dc3545;
+  color: white;
+}
+  
+  .stats-content {
+    font-size: 1.2rem;
+    color: rgb(107,7,131);
+  }
+  
+  .stats-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+  }
+  
+  .stats-row p {
+    flex: 1;
+    margin: 0;
+  }
+  
+  .stats-row span {
+    font-weight: 600;
+    color: rgb(197, 158, 3);
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 1.25rem;
+    color: #718096;
+  }
+  
+  .error {
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 1.25rem;
+    color: #e53e3e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .branch-header {
+      font-size: 1.125rem;
+    }
+  
+    .stats-row {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .branch-stats-container {
+      padding: 0.75rem;
+    }
+  
+    .stats-title {
+      font-size: 1.5rem;
+    }
+  
+    .branch-card {
+      padding: 1rem;
+    }
+  
+    .branch-header {
+      padding: 0.5rem;
+      margin: -1rem -1rem 1rem -1rem;
+    }
+  }

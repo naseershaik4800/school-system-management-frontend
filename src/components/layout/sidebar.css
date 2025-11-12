@@ -1,0 +1,140 @@
+/* Base styles */
+body {
+  margin: 0;
+  /* padding-left: 60px; */
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.main-content {
+  flex: 1;
+  /* padding: 20px; */
+  background-color: #f8f8f8f5;
+  transition: margin-left 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.sidebar {
+  transition: all 0.01s ease-in-out;
+  white-space: nowrap;
+  z-index: 1000;
+  padding-left: 10px;
+  padding-right: 60px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+/* Toggle button */
+.sidebar-toggle {
+  background-color: #4e73df;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1050;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+  background-color: #224abe;
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar-toggle {
+    display: none !important;
+  }
+}
+
+/* Overlay for mobile */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Nav link styles */
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(252, 202, 0, 0.774) !important;
+  color: #ffffff !important;
+}
+
+.nav-link.bg-warning {
+  background-color: #f7c948 !important;
+  color: #ffffff !important;
+}
+
+.bi {
+  font-size: 1.3rem;
+}
+
+.sidebar .nav-link svg,
+.sidebar-toggle svg {
+  color: white !important;
+  font-size: 1.1rem;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  color: #333 !important;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa !important;
+  color: #000 !important;
+}
+
+/* Sidebar header */
+.sidebar-header h4 {
+  font-size: 1.2rem;
+}
+
+/* Sidebar text and icons */
+.sidebar-text {
+  font-size: 0.95rem;
+}
+
+.sidebar-icon {
+  min-width: 20px;
+  text-align: center;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
