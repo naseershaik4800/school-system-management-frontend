@@ -94,7 +94,7 @@ function InactivityWrapper() {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
   // Use useRef instead of useState for the timer to avoid re-renders
   const inactivityTimerRef = useRef(null);
-  const INACTIVITY_TIMEOUT = 60000; // 1 minute in milliseconds
+  const INACTIVITY_TIMEOUT = 1440000; // 24 hour in milliseconds
   const navigate = useNavigate();
   const loadingRef = useRef(false); // Add loading state for navigation control
 
